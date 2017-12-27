@@ -640,7 +640,7 @@ WARNING
             "NOKOGIRI_USE_SYSTEM_LIBRARIES" => "true",
             "JAVA_HOME"                     => noshellescape("#{pwd}/$JAVA_HOME"),
             "BUNDLE_DISABLE_VERSION_CHECK"  => "true",
-            "BUNDLE_BUILD__RUBY-OPENCV"     => "$OPENCV_ROOT"
+            "BUNDLE_BUILD__RUBY-OPENCV"     => "/app/.heroku/opencv"
           }
           env_vars["BUNDLER_LIB_PATH"] = "#{bundler_path}" if ruby_version.ruby_version == "1.8.7"
           puts "Running: #{bundle_command}"
